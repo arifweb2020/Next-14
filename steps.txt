@@ -74,3 +74,8 @@ make one folder like about inside that add page.tsx file
 
 -common layout in layout.tsx
 for ex: navbar
+
+- Conditional layout
+follow - login folder
+
+- Dynamic routing

@@ -1,22 +1,30 @@
+'use client'
 import Link from 'next/link';
 import React,{ReactNode} from 'react';
-import './style.css'
+import './style.css';
+import { usePathname } from 'next/navigation';
 
 interface LayoutProps {
     children: ReactNode;
   }
 
   const Layout: React.FC<LayoutProps> = ({ children }) => {
+    // conditonal routing
+    const pathName = usePathname();
     return (
       <div>
-        <ul className='menu'>
+        {
+            pathName !== "/services" ?
+            <ul className='menu'>
             <li>
                 <Link href="/">Home</Link>
             </li>
             <li>
                 <Link href="/about">About</Link>
             </li>
-        </ul>
+        </ul> : null
+        }
+       
         {children}
       </div>
     );
