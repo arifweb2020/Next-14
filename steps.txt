@@ -4,3 +4,67 @@ npx create-next-app@latest folder-name
 - Routing
 based on file system inside app folder if you want to make url or routing ex:http://localhost:3000/about
 make one folder like about inside that add page.tsx file
+
+- Link and navigation
+for redirect use <Link href="/login">Login </Link>
+for button on click import { useRouter } from 'next/navigation';
+
+- We can install express directly in our next js app
+npm install express
+
+# or if you prefer using Yarn
+
+yarn add express
+
+ 
+
+In your project directory
+
+// server.js
+
+const express = require('express');
+const next = require('next');
+const dev = process.env.NODE_ENV !== 'production';
+const app = next({ dev });
+const handle = app.getRequestHandler();
+
+app.prepare().then(() => {
+
+  const server = express();
+
+  // Define your Express.js routes and API endpoints here
+
+  server.get('/api/example', (req, res) => {
+
+    res.json({ message: 'This is an example API endpoint' });
+
+  });
+
+  server.all('*', (req, res) => {
+
+    return handle(req, res);
+
+  });
+
+  server.listen(3000, (err) => {
+
+    if (err) throw err;
+
+    console.log('> Ready on http://localhost:3000');
+
+  });
+
+});
+
+Package json file
+
+"scripts": {
+
+  "dev": "node server.js",
+
+  "build": "next build",
+
+  "start": "NODE_ENV=production node server.js"
+
+}
+npm run dev

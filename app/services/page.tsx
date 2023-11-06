@@ -1,12 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
 
-export const About = () => {
+const Service = () => {
   return (
-    <div>About<br/>
+    <div>
+        Service <br/>
         <Link href="/">Go to home page</Link>
     </div>
   )
 }
 
-export default About
+export default Service
