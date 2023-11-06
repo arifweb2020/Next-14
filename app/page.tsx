@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.description}>
         <h1>Test</h1>
         <Link href='/about'>Go to about page</Link><br/><br/>
-        <Link href='/about'>Go to services page</Link><br/><br/>
+        <Link href='/services'>Go to services page</Link><br/><br/>
         <Link href='/user-list'>Go to user list page</Link><br/><br/>
         <Link href='/tutorial'>Go to user Tutorial page</Link><br/><br/>
         <button onClick={() => pageNavigate('/login')}>Login</button>

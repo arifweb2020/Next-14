@@ -89,3 +89,7 @@ follow - tutorial folder
 
 - 404 page not found
 name same shud me specific - not-found.tsx
+
+- middleware
+is a part of routing
+create a middleware in a root directory with the name middleware.ts
