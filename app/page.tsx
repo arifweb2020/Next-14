@@ -14,7 +14,7 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <h1>Test</h1>
-        <Link href='/about'>Go to about page</Link>
+        <Link href='/about'>Go to about page</Link><br/><br/>
         <button onClick={() => pageNavigate('/services')}>Services</button>
       </div>
     </main>

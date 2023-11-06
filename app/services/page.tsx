@@ -4,7 +4,7 @@ import React from 'react'
 const Service = () => {
   return (
     <div>
-        Service <br/>
+        Service <br/><br/>
         <Link href="/">Go to home page</Link>
     </div>
   )
