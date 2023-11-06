@@ -83,6 +83,9 @@ based on id or name
 follow - user-list folder
 
 
--catch all segement of router
+- catch all segement of router
 we can add many segement in url ex: http://localhost:3000/tutorial/science/chemistry
 follow - tutorial folder 
+
+- 404 page not found
+name same shud me specific - not-found.tsx
