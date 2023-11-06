@@ -79,3 +79,4 @@ for ex: navbar
 follow - login folder
 
 - Dynamic routing
+based on id or name

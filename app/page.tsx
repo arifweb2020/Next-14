@@ -16,6 +16,7 @@ export default function Home() {
         <h1>Test</h1>
         <Link href='/about'>Go to about page</Link><br/><br/>
         <Link href='/about'>Go to services page</Link><br/><br/>
+        <Link href='/user-list'>Go to user list page</Link><br/><br/>
         <button onClick={() => pageNavigate('/login')}>Login</button>
       </div>
     </main>
