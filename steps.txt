@@ -1,2 +1,6 @@
 - set up Next
 npx create-next-app@latest folder-name
+
+- Routing
+based on file system inside app folder if you want to make url or routing ex:http://localhost:3000/about
+make one folder like about inside that add page.tsx file
