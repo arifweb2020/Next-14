@@ -1,0 +1,16 @@
+.menu{
+display: flex;
+background-color: purple;
+color: #fff;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.menu li {
+    margin-left: 30px;
+    list-style-type: none;
+}
+
+.menu li a{
+    text-decoration: none;
+}

@@ -71,3 +71,6 @@ npm run dev
 - Nested Routing
 based on file system inside top level app folder we hv to make one folder if you want to make url or routing ex:http://localhost:3000/about/company-profile
 make one folder like about inside that add page.tsx file
+
+-common layout in layout.tsx
+for ex: navbar
