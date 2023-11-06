@@ -1,0 +1,2 @@
+- set up Next
+npx create-next-app@latest folder-name
