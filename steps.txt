@@ -79,4 +79,10 @@ for ex: navbar
 follow - login folder
 
 - Dynamic routing
-based on id or name
+based on id or name 
+follow - user-list folder
+
+
+-catch all segement of router
+we can add many segement in url ex: http://localhost:3000/tutorial/science/chemistry
+follow - tutorial folder 
