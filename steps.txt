@@ -93,3 +93,6 @@ name same shud me specific - not-found.tsx
 - middleware
 is a part of routing
 create a middleware in a root directory with the name middleware.ts
+
+- server component data fetching
+follow product folder

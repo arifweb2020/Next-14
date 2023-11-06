@@ -12,4 +12,6 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: '/about/:path*',
   //  matcher: ['/about/:path*', '/services/:path*'],
+  // for nexted routing block
+  //   matcher: ['/about/company-profile:path*', '/services/:path*'],
 }
