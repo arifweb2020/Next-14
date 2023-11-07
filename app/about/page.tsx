@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-export const About = () => {
+const About = () => {
   return (
     <div>About<br/>
     <Link href="/about/company-profile">Company profile</Link><br/><br/>
