@@ -131,3 +131,7 @@ return{
 }
 }
 
+- script component (some time we dont hv npm Package so we hv to use cdn)
+we load particular library in specific component
+follow - service folder and geolocation.ts file
+
