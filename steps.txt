@@ -96,3 +96,27 @@ create a middleware in a root directory with the name middleware.ts
 
 - server component data fetching
 follow product folder
+
+- css module
+if you are making css module it should must .module name convention ex: custom.module.css
+
+- image optimaztion
+using Image component
+and if you want to add image from different url
+go next.config.js
+
+const nextConfig = {
+  images:{
+    domains:['url']
+  }
+}
+
+- font optimaztion
+import {Roboto} from 'next/font/google'
+const mystyle = Roboto({
+  weight:'100',
+  subsets:['latin'],
+  display:'swap'
+  })
+
+  <p className={mystyle.className}>font optimaztion</P>

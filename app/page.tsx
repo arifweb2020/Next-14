@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import styles from './page.module.css';
 import { useRouter } from 'next/navigation';
+import Image from 'next/image';
+import Logo from './../public/vercel.svg'
 
 export default function Home() {
   const navigate = useRouter();
@@ -13,6 +15,7 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
+        <Image src={Logo} alt={''}/>
         <h1>Test</h1>
         <Link href='/about'>Go to about page</Link><br/><br/>
         <Link href='/services'>Go to services page</Link><br/><br/>
