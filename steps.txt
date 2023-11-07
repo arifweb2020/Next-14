@@ -160,5 +160,13 @@ const nextConfig = {
 then run command - npm run build
 then you will get out folder
 
+- static site generation
+at the time of buid yr js code convert into html 
+follow ssg folder
 
+first stop server then run npm run build
+once build is finish go .next > server > app folder there you will 
+
+- ssr 
+when we call req the on server side itself js convert into html in each request
 
