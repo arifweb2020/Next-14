@@ -18,3 +18,10 @@ const UserList = () => {
 }
 
 export default UserList
+
+export const generateMetadata = ()=>{
+return{
+  title:"user page list",
+  description:"user data list for mba"
+}
+}
