@@ -135,3 +135,8 @@ return{
 we load particular library in specific component
 follow - service folder and geolocation.ts file
 
+- loader
+follow product folder
+you will get loading.tsx file name shd be same always we implemnted in server component
+
+
