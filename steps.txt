@@ -202,3 +202,17 @@ const nextConfig = {
     ]
   }
 }
+
+- env variable
+by default process.env.NODE_ENV 
+
+you acn make your own variable also
+create one file name with .env after that you can make name like this .env.local also
+
+DB_PASS="dewdwe"
+for access process.env.DB_PASS
+
+for prod and dev url
+make one folder with config under that make one file constant.ts file
+
+export const API_BASE_URL = process.env.NODE_ENV == "development" ? "www.api.dev.com" : "www.api.prod.com"
