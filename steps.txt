@@ -170,3 +170,35 @@ once build is finish go .next > server > app folder there you will
 - ssr 
 when we call req the on server side itself js convert into html in each request
 
+- Redirection
+way one
+
+go to particular page which u want to redirect
+import {redirect} from 'nxt/navigation'
+const Login = () => {
+  redirect('/about')
+  return (
+    <div>This Navbar will appear only in Login page</div>
+  )
+}
+
+way two
+
+go to next.config.js file
+const nextConfig = {
+  redirects: async = ()=>{
+    return [
+      {
+        source:'/about',
+        destination:'/',
+        permanent:false
+      }
+      ,
+      {
+        source:'/about/:id', // for dynamic page redirection
+        destination:'/',
+        permanent:false
+      }
+    ]
+  }
+}
