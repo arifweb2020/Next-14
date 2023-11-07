@@ -15,14 +15,14 @@ const producList = async()=>{
     return data
 }
 
-const Product = async ({products}:ProductProps) => {
-    const x:any = await producList();
+const Product = async () => {
+    const x:ProductProps[]|any = await producList();
 
   return (
     <div>
         <h1>List of product</h1>
         {
-            x?.products?.map((item:any)=>{
+            x?.products?.map((item:Product)=>{
                 return<p key={item.id}>{item.title}</p>
             })
         }
