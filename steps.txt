@@ -216,3 +216,7 @@ for prod and dev url
 make one folder with config under that make one file constant.ts file
 
 export const API_BASE_URL = process.env.NODE_ENV == "development" ? "www.api.dev.com" : "www.api.prod.com"
+
+- API routes
+write server code like node , db connection
+follow api folder
