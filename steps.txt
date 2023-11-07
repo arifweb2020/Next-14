@@ -139,4 +139,26 @@ follow - service folder and geolocation.ts file
 follow product folder
 you will get loading.tsx file name shd be same always we implemnted in server component
 
+- static assets
+when we buil and project on that time yr file name folder structure will change and code is minified
+but in static file when we make production build it remains unchange
+we can put basic cnofig file like ex:sitemap, favicon
+the file we can use globaly ex:css,js file
+and put inside public folder
+
+- how to make production build
+build - to execute our code in browser
+
+- export static html page
+create static-folder
+go to next-config.js file and add this key  output:"export"
+
+const nextConfig = {
+    output:"export"
+}
+
+then run command - npm run build
+then you will get out folder
+
+
 
