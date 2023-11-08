@@ -233,3 +233,7 @@ follow api > users > [id] folder
 
 - fetch single data of user from api user routes
 follow crud folder
+
+- Make Api with post method
+follow api>users>route folder
+follow crud>add-user folder post api integration
