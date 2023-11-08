@@ -18,7 +18,7 @@ export async function PUT(req:any,res:any){
    // const userId = res.params.id
    payload.id= res.params.id
     console.log("payload1", payload)
-    if(!payload.name || !payload.age || !payload.id){
+    if(!payload.name || !payload.city || !payload.id){
         return NextResponse.json({result:"all field is required", success:false},{status:400})
     }
     return NextResponse.json({result:payload,success:true},{status:200})

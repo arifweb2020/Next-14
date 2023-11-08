@@ -21,6 +21,7 @@ const Crud = async () => {
         return (
           <p key={user.id}>
             <Link href={`/crud/${user.id}`}>{user.name}</Link>
+            <span style={{marginLeft:'30px',color:'green'}}><Link href={`/crud/${user.id}/update`}>Edit</Link></span>
           </p>
         );
       })}

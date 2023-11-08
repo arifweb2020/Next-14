@@ -240,4 +240,4 @@ follow crud>add-user folder post api integration
 
 - Make Api with put method
 follow api>users>[id]> route folder
-follow crud>add-user folder post api integration
+follow crud>add-user and update folder post api integration
