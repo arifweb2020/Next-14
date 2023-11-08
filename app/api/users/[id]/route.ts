@@ -12,3 +12,15 @@ export async function GET(res:any) {
     singleUser.length == 0 ? {result:"No Data Found", success:false} : {result:singleUser[0],success:true}
   , {status:200});
 }
+
+export async function PUT(req:any,res:any){
+    let payload = await req.json();
+   // const userId = res.params.id
+   payload.id= res.params.id
+    console.log("payload1", payload)
+    if(!payload.name || !payload.age || !payload.id){
+        return NextResponse.json({result:"all field is required", success:false},{status:400})
+    }
+    return NextResponse.json({result:payload,success:true},{status:200})
+   
+}

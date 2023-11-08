@@ -237,3 +237,7 @@ follow crud folder
 - Make Api with post method
 follow api>users>route folder
 follow crud>add-user folder post api integration
+
+- Make Api with put method
+follow api>users>[id]> route folder
+follow crud>add-user folder post api integration
