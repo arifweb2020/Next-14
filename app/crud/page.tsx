@@ -1,11 +1,31 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
-const Crud = () => {
-  return (
-    <div>
-        <h1>Fetch data from API Routes</h1>
-    </div>
-  )
+interface UserListProps {
+  id: number;
+  name: string;
 }
 
-export default Crud
+const userList = async () => {
+  const res = await fetch("http://localhost:3000/api/users");
+  const finalData = await res.json();
+  return finalData;
+};
+
+const Crud = async () => {
+  const data: UserListProps[] = await userList();
+  return (
+    <div>
+      <h1>Fetch data from API Routes</h1>
+      {data?.map((user: UserListProps) => {
+        return (
+          <p key={user.id}>
+            <Link href={`/crud/${user.id}`}>{user.name}</Link>
+          </p>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Crud;

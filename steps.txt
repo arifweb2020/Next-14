@@ -230,3 +230,6 @@ follow utils folder inside db files
 
 - filter single data from API in routes
 follow api > users > [id] folder
+
+- fetch single data of user from api user routes
+follow crud folder
