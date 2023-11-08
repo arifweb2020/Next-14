@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Button from "../component/button/button";
 
 interface UserListProps {
   id: number;
@@ -22,6 +23,7 @@ const Crud = async () => {
           <p key={user.id}>
             <Link href={`/crud/${user.id}`}>{user.name}</Link>
             <span style={{marginLeft:'30px',color:'green'}}><Link href={`/crud/${user.id}/update`}>Edit</Link></span>
+            <Button userId={user.id} text="Delete"/>
           </p>
         );
       })}

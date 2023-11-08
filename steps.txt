@@ -239,5 +239,10 @@ follow api>users>route folder
 follow crud>add-user folder post api integration
 
 - Make Api with put method
+[id] is dynamic api route
+follow api>users>[id]> route folder
+follow crud>add-user and update folder post api integration
+
+- Make Api with delete method
 follow api>users>[id]> route folder
 follow crud>add-user and update folder post api integration

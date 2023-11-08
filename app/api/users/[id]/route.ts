@@ -24,3 +24,14 @@ export async function PUT(req:any,res:any){
     return NextResponse.json({result:payload,success:true},{status:200})
    
 }
+
+export function DELETE(req:any,res:any){
+    let id = res.params.id
+    console.log("del",id)
+    if(id){
+        return NextResponse.json({result:"User deleted",success:true},{status:200})
+    }
+    else{
+        return NextResponse.json({result:"Internal error",success:false},{status:400})
+    }
+}
