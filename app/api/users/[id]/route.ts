@@ -7,8 +7,8 @@ export async function GET(res:any) {
   const responseData = user
   //const singleUser = responseData.filter((item)=>item.id === res?.params?.id)
   const singleUser = responseData.filter((item)=>item.id === parseInt(path[path.length-1]))
- // console.log(singleUser)
+ //console.log(singleUser[0], "test")
   return NextResponse.json(
-    singleUser.length == 0 ? {result:"No Data Found", success:false} : {result:singleUser,success:true}
+    singleUser.length == 0 ? {result:"No Data Found", success:false} : {result:singleUser[0],success:true}
   , {status:200});
 }
