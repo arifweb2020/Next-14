@@ -246,3 +246,6 @@ follow crud>add-user and update folder post api integration
 - Make Api with delete method
 follow api>users>[id]> route folder
 follow crud>add-user and update folder post api integration
+
+- catch all routes
+follow api>[...teacher]> route folder
