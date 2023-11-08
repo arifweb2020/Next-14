@@ -23,6 +23,7 @@ export default function Home() {
         <Link href='/tutorial'>Go to user Tutorial page</Link><br/><br/>
         <Link href='/product'>Go to user Product page</Link><br/><br/>
         <Link href='/ssg'>Static site generation</Link><br/><br/>
+        <Link href='/crud'>Fetch Data from API Routes</Link><br/><br/>
         <button onClick={() => pageNavigate('/login')}>Login</button>
       </div>
     </main>

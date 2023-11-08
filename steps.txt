@@ -220,3 +220,13 @@ export const API_BASE_URL = process.env.NODE_ENV == "development" ? "www.api.dev
 - API routes
 write server code like node , db connection
 follow api folder
+
+- Fetch data from API routes
+follow api folder
+follow crud folder for fetch data from API routes
+
+- Static db 
+follow utils folder inside db files
+
+- filter single data from API in routes
+follow api > users > [id] folder
